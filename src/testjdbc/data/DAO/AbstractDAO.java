@@ -19,8 +19,11 @@ import testjdbc.data.model.AbstractModel;
 public abstract class AbstractDAO {
     protected String tableName;
     protected String[] columns;
+
+    //Methode pour inserer une ligne dans une table
     public abstract int insert(AbstractModel o);
-    
+
+    //Methode pour supprimer une ligne d'une table
     public int delete(int id){
         int res = -1;
         String sql = "DELETE FROM "+ tableName +" WHERE ID = ?";
@@ -35,6 +38,10 @@ public abstract class AbstractDAO {
     }
     
     public abstract int update(AbstractModel o);
+
+    //Methode pour obtenir tous les elements d'une table
     public abstract ArrayList<AbstractModel> get();
+
+    //Methode pour obtenir tous les elements qui ont une clé etrangere particulière
     public abstract ArrayList<AbstractModel> get(int i);
 }

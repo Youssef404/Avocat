@@ -116,6 +116,7 @@ public class AvocatV2Controller implements Initializable {
             setAnchors(affairePane);
             setAnchors(audiencePane);
 
+            //Double click = chargement des tables client et affaire, un click = remplissage du formulaire
             dossierController.getTable().setOnMouseClicked((me)-> {
                 if(me.getClickCount()==2){
                     clientController.setIdDossier(dossierController.getSelectedId());
@@ -149,16 +150,19 @@ public class AvocatV2Controller implements Initializable {
         contentPane.getChildren().add(mainPane);
     }
 
+    //Methode pour charger l'FXML des clients
     public void pressClient(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(clientPane);
     }
 
+    //Methode pour charger l'FXML des affaires
     public void pressAffaire(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(affairePane);
     }
 
+    //Methode pour charger l'FXML de l'audience
     public void pressAudience(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(audiencePane);
