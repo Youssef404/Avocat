@@ -14,26 +14,29 @@
    <children>
       <VBox alignment="TOP_CENTER" prefWidth="208.0" spacing="20.0">
          <children>
-            <JFXDatePicker defaultColor="#054a91" promptText="Date de l'audience" />
-            <JFXTextField fx:id="tfNom" promptText="Verdict">
+            <JFXDatePicker fx:id="dpDateAudience" defaultColor="#054a91" promptText="Date de l'audience">
                <VBox.margin>
                   <Insets top="10.0" />
+               </VBox.margin></JFXDatePicker>
+            <JFXTextField fx:id="tfVerdict" promptText="Verdict">
+               <VBox.margin>
+                  <Insets />
                </VBox.margin>
                <font>
                   <Font size="15.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="tfPrenom" promptText="Ville">
+            <JFXTextField fx:id="tfVille" promptText="Ville">
                <font>
                   <Font size="15.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="tfTelephone" promptText="Instance">
+            <JFXTextField fx:id="tfInstance" promptText="Instance">
                <font>
                   <Font size="15.0" />
                </font>
             </JFXTextField>
-            <JFXComboBox fx:id="cbDossier" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Numéro du dossier" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 15px;" VBox.vgrow="ALWAYS" />
+            <JFXComboBox fx:id="cbAffaire" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Numéro de l'affaire" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 15px;" VBox.vgrow="ALWAYS" />
             <VBox alignment="BOTTOM_CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
                <children>
                   <JFXButton text="Ajouter" textFill="#054a91">
