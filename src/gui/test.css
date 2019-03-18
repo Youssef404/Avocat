@@ -1,0 +1,9 @@
+#butest{    
+    -fx-background-color: transparent;
+    -fx-border-color: none;
+}
+
+#butest .button{
+    -fx-border-color: none;
+    -fx-background-color: none;
+}

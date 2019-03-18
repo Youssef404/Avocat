@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="audiencePane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="631.0" prefWidth="964.0" stylesheets="@../stylesheets/styleV2.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.AudiencePageController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefWidth="208.0" spacing="20.0">
+         <children>
+            <JFXDatePicker fx:id="dpDateAudience" defaultColor="#054a91" promptText="Date de l'audience">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin></JFXDatePicker>
+            <JFXTextField fx:id="tfVerdict" promptText="Verdict">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfVille" promptText="Ville">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="tfInstance" promptText="Instance">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="cbAffaire" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Numéro de l'affaire" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 15px;" VBox.vgrow="ALWAYS" />
+            <VBox alignment="BOTTOM_CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <JFXButton text="Ajouter" textFill="#054a91">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="60.0" right="60.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton text="Modifier" textFill="#054a91">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="55.0" right="55.0" top="10.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton text="Supprimer" textFill="#054a91">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <TableView fx:id="tClient" stylesheets="@../stylesheets/styleV2.css" HBox.hgrow="ALWAYS">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy></TableView>
+   </children>
+</HBox>

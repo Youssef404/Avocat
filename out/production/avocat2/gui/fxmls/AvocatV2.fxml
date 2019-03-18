@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="701.0" prefWidth="1188.0" stylesheets="@../stylesheets/styleV2.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.AvocatV2Controller">
+   <top>
+      <HBox style="-fx-background-color: #DBE4EE;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="iconeHome" alignment="CENTER" onMouseClicked="#pressAccueil" prefWidth="150.0" style="-fx-background-color: #054A91; -fx-cursor: hand;">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GAVEL" size="2.4em" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Comfortaa Bold&quot;; -fx-font-size: 1.3em;" text="Bureau d'avocat">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Text>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #FFFFFF;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="userImage" fitHeight="150.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/jimmy-fallon.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Text fx:id="userName" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Comfortaa; -fx-font-size: 15px;" text="Youssef El Kasmi">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <FontAwesomeIconView fx:id="userMenuDrop" glyphName="ANGLE_DOWN" size="1.2em" style="-fx-cursor: hand;">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="631.0" prefWidth="224.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="tabAccueil" alignment="CENTER_LEFT" onMouseClicked="#pressAccueil" style="-fx-cursor: hand;" styleClass="hover-border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <children>
+                  <FontAwesomeIconView glyphName="HOME" size="20" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 1.5em;" text="Accueil">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox fx:id="tabDossiers" alignment="CENTER_LEFT" onMouseClicked="#pressDossier" style="-fx-cursor: hand;" styleClass="hover-border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView glyphName="FOLDER" size="20" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 1.5em;" text="Dossiers">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="tabClients" alignment="CENTER_LEFT" onMouseClicked="#pressClient" style="-fx-cursor: hand;" styleClass="hover-border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView glyphName="USER" size="20" text="" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 1.5em;" text="Clients">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="tabAffaires" alignment="CENTER_LEFT" onMouseClicked="#pressAffaire" style="-fx-cursor: hand;" styleClass="hover-border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView glyphName="BRIEFCASE" size="20" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 1.5em;" text="Affaires">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="tabAudience" alignment="CENTER_LEFT" onMouseClicked="#pressAudience" style="-fx-cursor: hand;" styleClass="hover-border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView glyphName="USERS" size="20" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 1.5em;" text="Audience">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fx:id="tabPieces" alignment="CENTER_LEFT" style="-fx-cursor: hand;" styleClass="hover-border">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <FontAwesomeIconView glyphName="FILE" size="20" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Comfortaa Light&quot;; -fx-font-size: 1.5em;" text="Pieces">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="contentPane" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding></AnchorPane>
+   </center>
+</BorderPane>

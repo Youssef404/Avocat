@@ -1,0 +1,65 @@
+@font-face{
+    src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+}
+@font-face{
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+@font-face{
+    src:url(../fonts/Comfortaa-Bold.ttf) ;
+}
+@font-face{
+    src:url(../fonts/Comfortaa-Light.ttf);
+}
+@font-face{
+    src:url(../fonts/Comfortaa-Regular.ttf);
+}
+
+.hover-border:hover{
+    -fx-border-color: #000000;
+    -fx-border-width: 0 0 0 2px;
+    -fx-background-color: #DBE4EE;
+}
+
+.table-view {
+    -fx-base: #FFFFFF;
+    -fx-control-inner-background: #FFFFFF;
+     -fx-control-inner-background-alt: -fx-control-inner-background ;
+    -fx-background-color: #FFFFFF;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+    -fx-font-size:16px;
+    
+}
+
+.bold{
+    -fx-font-weight:bold;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 80%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 20pt;
+    -fx-font-family: "Comfortaa Light";
+    -fx-text-fill: black;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: #054a91;
+}
