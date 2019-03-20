@@ -30,10 +30,13 @@ public class DossierDAO extends AbstractDAO {
     public int insert(AbstractModel o) {
         Dossier d = (Dossier) o;
         int res = -1;
-        String sql = "insert into Dossier (date_creation) values (?)";
+        String sql = "insert into Dossier (date_creation) values (?, ?, ?, ?)";
         PreparedStatement ps = DAOUtil.getPStatement(sql);
         try {
             ps.setString(1, d.getDateCreation().toString());
+            ps.setString(2, d.getTitre());
+            ps.setString(3, d.getDemandeur());
+            ps.setString(4, d.getDefendeur());
             res = ps.executeUpdate();
             if (res != -1) {
                 ResultSet keys = ps.getGeneratedKeys();
@@ -51,11 +54,15 @@ public class DossierDAO extends AbstractDAO {
     public int update(AbstractModel o) {
         Dossier d = (Dossier) o;
         int res = -1;
-        String sql = "update Dossier set date_creation = ? where id = ?";
+        String sql = "update Dossier set date_creation = ?, titre = ?, demandeur = ?, defendeur = ? where id = ?";
         PreparedStatement ps = DAOUtil.getPStatement(sql);
         try {
             ps.setString(1, d.getDateCreation().toString());
-            ps.setInt(2, d.getId());
+            ps.setString(2, d.getTitre());
+            ps.setString(3, d.getDemandeur());
+            ps.setString(4, d.getDefendeur());
+            ps.setInt(5, d.getId());
+
             res = ps.executeUpdate();
             if (res != -1) {
                 for (int i = 0; i < dossiers.size(); i++) {
@@ -79,7 +86,7 @@ public class DossierDAO extends AbstractDAO {
             try {
                 ResultSet r = DAOUtil.getStatement().executeQuery(sql);
                 while (r.next()) {
-                    d = new Dossier(r.getInt(1), r.getDate(2).toLocalDate());
+                    d = new Dossier(r.getInt(1), r.getDate(2).toLocalDate(), r.getString(3), r.getString(4), r.getString(5));
                     System.out.println(r.getInt(1));
                     dossiers.add(d);
                 }
@@ -98,8 +105,7 @@ public class DossierDAO extends AbstractDAO {
             try {
                 ResultSet r = DAOUtil.getStatement().executeQuery(sql);
                 while (r.next()) {
-                    d = new Dossier(r.getInt(1), r.getDate(2).toLocalDate());
-                    System.out.println(r.getInt(1));
+                    d = new Dossier(r.getInt(1), r.getDate(2).toLocalDate(), r.getString(3), r.getString(4), r.getString(5));
                     dossiers.add(d);
                 }
             } catch (SQLException ex) {

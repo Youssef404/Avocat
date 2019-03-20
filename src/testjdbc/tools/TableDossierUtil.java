@@ -35,10 +35,28 @@ public class TableDossierUtil extends AbstractUtil{
         colNum.getStyleClass().add("bold");
         return colNum;
     }
-    
+
     public TableColumn<AbstractModel,String> getDateCol(){
         TableColumn<AbstractModel,String>colDate = new TableColumn<>("Date de création");
         colDate.setCellValueFactory(new PropertyValueFactory<>("dateCreation"));
         return colDate;
+    }
+
+    public TableColumn<AbstractModel, String> getTitreCol() {
+        TableColumn<AbstractModel, String> colTitre = new TableColumn<>("Titre");
+        colTitre.setCellValueFactory(new PropertyValueFactory<>("titre"));
+        return colTitre;
+    }
+
+    public TableColumn<AbstractModel, String> getDemandeurCol() {
+        TableColumn<AbstractModel, String> colDemandeur = new TableColumn<>("Demandeur");
+        colDemandeur.setCellValueFactory(new PropertyValueFactory<>("demandeur"));
+        return colDemandeur;
+    }
+
+    public TableColumn<AbstractModel, String> getDefendeurCol() {
+        TableColumn<AbstractModel, String> colDefendeur = new TableColumn<>("Defendeur");
+        colDefendeur.setCellValueFactory(new PropertyValueFactory<>("defendeur"));
+        return colDefendeur;
     }
 }

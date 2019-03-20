@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXDatePicker;
+import com.jfoenix.controls.JFXTextField;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -32,6 +33,8 @@ public class DossierPageController implements Initializable {
     private TableView<AbstractModel> tDossier;
     @FXML
     JFXDatePicker dcCreation;
+    @FXML
+    JFXTextField tfTitre, tfDemandeur, tfDefendeur;
 
     /**
      * Initializes the controller class.
@@ -42,7 +45,7 @@ public class DossierPageController implements Initializable {
 
         //Initialisation du tableau
         tDossier.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-        tDossier.getColumns().addAll(tDU.getNumCol(), tDU.getDateCol());
+        tDossier.getColumns().addAll(tDU.getNumCol(), tDU.getDateCol(), tDU.getTitreCol(), tDU.getDemandeurCol(), tDU.getDefendeurCol());
         remplirTableView();
     }
 
@@ -55,7 +58,7 @@ public class DossierPageController implements Initializable {
 
     //Methode qui ajoute un dossier
     public void ajouterDossier(ActionEvent e) {
-        Dossier d = new Dossier(0, dcCreation.getValue());
+        Dossier d = new Dossier(0, dcCreation.getValue(), tfTitre.getText(), tfDemandeur.getText(), tfDefendeur.getText());
         DossierDAO dDao = new DossierDAO();
         dDao.insert(d);
         tDossier.getItems().add(d);
@@ -67,6 +70,9 @@ public class DossierPageController implements Initializable {
         Dossier selectedD = (Dossier)tDossier.getSelectionModel().getSelectedItem();
         int i = tDossier.getSelectionModel().getSelectedIndex();
         selectedD.setDateCreation(dcCreation.getValue());
+        selectedD.setTitre(tfTitre.getText());
+        selectedD.setDefendeur(tfDefendeur.getText());
+        selectedD.setDemandeur(tfDemandeur.getText());
         DossierDAO dDao = new DossierDAO();
         dDao.update(selectedD);
         tDossier.getItems().set(i,selectedD);

@@ -13,10 +13,14 @@ import java.time.LocalDate;
 public class Dossier extends AbstractModel{
     private int id;
     private LocalDate dateCreation;
+    private String titre, demandeur, defendeur;
 
-    public Dossier(int id, LocalDate dateCreation) {
+    public Dossier(int id, LocalDate dateCreation, String titre, String demandeur, String defendeur) {
         this.id = id;
         this.dateCreation = dateCreation;
+        this.titre = titre;
+        this.demandeur = demandeur;
+        this.defendeur = defendeur;
     }
 
     public int getId() {
@@ -34,6 +38,28 @@ public class Dossier extends AbstractModel{
     public void setDateCreation(LocalDate dateCreation) {
         this.dateCreation = dateCreation;
     }
-    
-    
+
+    public void setTitre(String titre) {
+        this.titre = titre;
+    }
+
+    public void setDemandeur(String demandeur) {
+        this.demandeur = demandeur;
+    }
+
+    public void setDefendeur(String defendeur) {
+        this.defendeur = defendeur;
+    }
+
+    public String getTitre() {
+        return titre;
+    }
+
+    public String getDemandeur() {
+        return demandeur;
+    }
+
+    public String getDefendeur() {
+        return defendeur;
+    }
 }
