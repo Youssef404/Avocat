@@ -21,7 +21,7 @@
     -fx-base: #FFFFFF;
     -fx-control-inner-background: #FFFFFF;
      -fx-control-inner-background-alt: -fx-control-inner-background ;
-    -fx-background-color: #FFFFFF;
+    -fx-background-color: #ffffff;
     -fx-table-cell-border-color: transparent;
     -fx-table-header-border-color: transparent;
     -fx-padding: 5;
@@ -76,4 +76,11 @@
 .jfx-text-field{
     -fx-font-family: "Comfortaa Light";
     -fx-font-size: 15px;
+}
+
+.card-unpadded {
+    -fx-background-color: #f4f4f4;
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgba(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0, 1.5);
+    -fx-padding: 0 0 0 0;
 }
