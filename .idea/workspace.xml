@@ -4,8 +4,20 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81146259-9c5b-46b4-823e-397e27e61155" name="Default Changelist" comment="">
+    <list default="true" id="81146259-9c5b-46b4-823e-397e27e61155" name="Default Changelist" comment="Ajout de commentaires">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/avocat2/gui/controllers/AvocatV2Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/avocat2/gui/controllers/AvocatV2Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/avocat2/gui/fxmls/affairePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/avocat2/gui/fxmls/affairePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/avocat2/gui/fxmls/audiencePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/avocat2/gui/fxmls/audiencePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/avocat2/gui/fxmls/clientPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/avocat2/gui/fxmls/clientPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/avocat2/gui/fxmls/dossierPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/avocat2/gui/fxmls/dossierPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/avocat2/gui/stylesheets/styleV2.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/avocat2/gui/stylesheets/styleV2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/avocat2/testjdbc/tools/FileUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/avocat2/testjdbc/tools/FileUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/controllers/AvocatV2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/controllers/AvocatV2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/fxmls/clientPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/fxmls/clientPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/stylesheets/styleV2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/stylesheets/styleV2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testjdbc/tools/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/testjdbc/tools/FileUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,23 +47,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/stylesheets/styleV2.css">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/testjdbc/data/DAO/PieceDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+            <state relative-caret-position="357">
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/controllers/AvocatV2Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/gui/controllers/AudiencePageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="145" selection-start-line="145" selection-end-line="145" />
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/controllers/AffairePageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/controllers/ClientPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="113" column="39" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/controllers/DossierPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1241">
+              <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2941#2942#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/testjdbc/tools/FileUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/controllers/AvocatV2Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/controllers/MainPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/stylesheets/styleV2.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -118,28 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="avocat2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="avocat2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="avocat2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="avocat2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="dist" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="avocat2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="avocat2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="dist" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,19 +239,77 @@
         <subPane>
           <expand>
             <path>
-              <item name="AvocatGit" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
               <item name="avocat2" type="616d4139:PackageViewModuleNode" />
             </path>
             <path>
-              <item name="AvocatGit" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
               <item name="avocat2" type="616d4139:PackageViewModuleNode" />
               <item name="gui" type="1f31426a:PackageElementNode" />
             </path>
             <path>
-              <item name="AvocatGit" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="616d4139:PackageViewModuleNode" />
+              <item name="gui" type="1f31426a:PackageElementNode" />
+              <item name="controllers" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
               <item name="avocat2" type="616d4139:PackageViewModuleNode" />
               <item name="gui" type="1f31426a:PackageElementNode" />
               <item name="fxmls" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="616d4139:PackageViewModuleNode" />
+              <item name="gui" type="1f31426a:PackageElementNode" />
+              <item name="stylesheets" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="616d4139:PackageViewModuleNode" />
+              <item name="testjdbc" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="616d4139:PackageViewModuleNode" />
+              <item name="testjdbc" type="1f31426a:PackageElementNode" />
+              <item name="data" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="616d4139:PackageViewModuleNode" />
+              <item name="testjdbc" type="1f31426a:PackageElementNode" />
+              <item name="data" type="1f31426a:PackageElementNode" />
+              <item name="DAO" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="avocat2" type="58d84e3e:PackageViewProjectNode" />
+              <item name="avocat2" type="616d4139:PackageViewModuleNode" />
+              <item name="testjdbc" type="1f31426a:PackageElementNode" />
+              <item name="tools" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="avocat2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="avocat2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="avocat2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="avocat2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="dist" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="avocat2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="avocat2" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="dist" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="lib" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -188,8 +321,8 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553088301635" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fxgestion/dist/lib/animatefx-1.2.1.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553098794120" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/lib/animatefx-1.2.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -285,7 +418,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60502000" />
+    <option name="totallyTimeSpent" value="61681000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,10 +430,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15637584" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21055438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -310,7 +443,7 @@
       <window_info id="Learn" order="7" weight="0.3295302" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -320,7 +453,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -360,28 +493,28 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/65fda55f-6c70-4823-8dbd-1780aadb410a/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/gui/fxmls/dossierPage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-14">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/fxmls/clientPage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="36" column="22" lean-forward="true" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/fxmls/AvocatV2.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/fonts/Comfortaa-Regular.ttf">
       <provider selected="true" editor-type-id="fontseditor" />
@@ -415,12 +548,12 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/fxmls/affairePage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/FXMLDocumentController.java" />
     <entry file="file://$PROJECT_DIR$/src/testjdbc/tools/TableAffaireUtil.java">
@@ -445,12 +578,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/fxmls/audiencePage.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="263" selection-start-line="12" selection-start-column="263" selection-end-line="12" selection-end-column="263" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testjdbc/data/DAO/ClientDAO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -528,17 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/testjdbc/tools/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        <state relative-caret-position="493">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -549,20 +675,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/controllers/AvocatV2Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/stylesheets/styleV2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="49" column="32" selection-start-line="49" selection-start-column="32" selection-end-line="49" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/stylesheets/styleV2.css">
+    <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+        <state relative-caret-position="391">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/controllers/AvocatV2Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

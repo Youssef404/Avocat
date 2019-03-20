@@ -10,7 +10,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox fx:id="affairePane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="631.0" prefWidth="964.0" stylesheets="@../stylesheets/styleV2.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.AffairePageController">
+<HBox fx:id="affairePane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="631.0" prefWidth="964.0"
+      styleClass="card-unpadded" stylesheets="@../stylesheets/styleV2.css" xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.AffairePageController">
    <children>
       <VBox alignment="TOP_CENTER" prefWidth="208.0" spacing="20.0">
          <children>

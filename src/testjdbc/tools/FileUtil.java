@@ -36,7 +36,6 @@ public class FileUtil {
     
    public static ArrayList<String> lirePropreties(ArrayList<String> lp){
        ArrayList<String> lProp = new ArrayList<>();
-       
        Properties p = new Properties();
        ClassLoader cl = Thread.currentThread().getContextClassLoader();
        InputStream fp = cl.getResourceAsStream("testjdbc/config/params.properties");
@@ -48,8 +47,8 @@ public class FileUtil {
         
         for (int i = 0; i < lp.size(); i++) {
             lProp.add(p.getProperty(lp.get(i)));
-       }
-        
+        }
+
        return lProp;
    }
 }

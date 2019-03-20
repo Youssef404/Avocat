@@ -10,11 +10,16 @@
 }
 
 /*Style des tabs de navigation*/
-.hover-border:hover{
+.hover-border:hover, .tab-active {
     -fx-border-color: #000000;
     -fx-border-width: 0 0 0 2px;
     -fx-background-color: #DBE4EE;
 }
+
+.tab-active {
+    -fx-background-color: #a2abb5 !important;
+}
+
 
 /*Style des table view*/
 .table-view {
@@ -65,7 +70,7 @@
     -fx-font-weight: bold;
 }
 
-/*Style des boutons**/
+/*Style des boutons*/
 .button{
     -fx-font-size: 16px;
     -fx-font-weight:bolder;

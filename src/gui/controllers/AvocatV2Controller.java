@@ -138,33 +138,52 @@ public class AvocatV2Controller implements Initializable {
         }
     }
 
-    //Methode pour charger l'FXML de dossiers
+    public void activate(HBox active) {
+        tabAudience.getStyleClass().remove("tab-active");
+        tabAffaires.getStyleClass().remove("tab-active");
+        tabAudience.getStyleClass().remove("tab-active");
+        tabClients.getStyleClass().remove("tab-active");
+        tabPieces.getStyleClass().remove("tab-active");
+        tabAccueil.getStyleClass().remove("tab-active");
+        tabDossiers.getStyleClass().remove("tab-active");
+        active.getStyleClass().add("tab-active");
+    }
+
+    /**
+     * Methode pour charger l'FXML de dossiers
+     */
+
     public void pressDossier() {
         contentPane.getChildren().clear();
         contentPane.getChildren().add(dossierPane);
+        activate(tabDossiers);
     }
 
     //Methode pour charger l'FXML de l'accueil
     public void pressAccueil() {
         contentPane.getChildren().clear();
         contentPane.getChildren().add(mainPane);
+        activate(tabAccueil);
     }
 
     //Methode pour charger l'FXML des clients
     public void pressClient(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(clientPane);
+        activate(tabClients);
     }
 
     //Methode pour charger l'FXML des affaires
     public void pressAffaire(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(affairePane);
+        activate(tabAffaires);
     }
 
     //Methode pour charger l'FXML de l'audience
     public void pressAudience(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(audiencePane);
+        activate(tabAudience);
     }
 }
