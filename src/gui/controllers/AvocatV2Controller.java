@@ -61,13 +61,14 @@ public class AvocatV2Controller implements Initializable {
     /**
      * Initializes the controller class.
      */
-    Pane mainPane, dossierPane, clientPane, affairePane, audiencePane;
-    FXMLLoader mainLoader, dossierLoader, clientLoader, affaireLoader, audienceLoader;
+    Pane mainPane, dossierPane, clientPane, affairePane, audiencePane, piecePane;
+    FXMLLoader mainLoader, dossierLoader, clientLoader, affaireLoader, audienceLoader, pieceLoader;
     DossierPageController dossierController;
     ClientPageController clientController;
     MainPageController mainController;
     AffairePageController affaireController;
     AudiencePageController audienceController;
+    PiecePageController pieceController;
 
     public void setAnchors(Pane pane){
         AnchorPane.setTopAnchor(pane, 0.0);
@@ -105,12 +106,18 @@ public class AvocatV2Controller implements Initializable {
             audiencePane = audienceLoader.load();
             audienceController = audienceLoader.getController();
 
+            //Initialisation du pane de la liste de piece
+            pieceLoader = new FXMLLoader(getClass().getResource("../fxmls/piecePage.fxml"));
+            piecePane = pieceLoader.load();
+            pieceController = pieceLoader.getController();
+
             //Attacher les ancres des panes à l'anchorpane mère
             setAnchors(clientPane);
             setAnchors(dossierPane);
             setAnchors(mainPane);
             setAnchors(affairePane);
             setAnchors(audiencePane);
+            setAnchors(piecePane);
 
             //Double click = chargement des tables client et affaire, un click = remplissage du formulaire
             dossierController.getTable().setOnMouseClicked((me)-> {
@@ -189,5 +196,14 @@ public class AvocatV2Controller implements Initializable {
         contentPane.getChildren().clear();
         contentPane.getChildren().add(audiencePane);
         activate(tabAudience);
+    }
+
+    /**
+     * Methode pour charger l'FXML de piece
+     */
+    public void pressPiece() {
+        contentPane.getChildren().clear();
+        contentPane.getChildren().add(piecePane);
+        activate(tabPieces);
     }
 }
