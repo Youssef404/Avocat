@@ -22,9 +22,7 @@ public class  MainPageController implements Initializable {
     @FXML
     private VBox alertContainer;
 
-    /**
-     * Initializes the controller class.
-     */
+    //Initializes the controller class.
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         Label label = new Label("Aucune alerte");
