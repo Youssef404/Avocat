@@ -148,35 +148,43 @@ public class AvocatV2Controller implements Initializable {
     /**
      * Methode pour charger l'FXML de dossiers
      */
-
     public void pressDossier() {
         contentPane.getChildren().clear();
         contentPane.getChildren().add(dossierPane);
         activate(tabDossiers);
     }
 
-    //Methode pour charger l'FXML de l'accueil
+    /**
+     * Methode pour charger l'FXML de l'accueil
+     */
+
     public void pressAccueil() {
         contentPane.getChildren().clear();
         contentPane.getChildren().add(mainPane);
         activate(tabAccueil);
     }
 
-    //Methode pour charger l'FXML des clients
+    /**
+     * Methode pour charger l'FXML des clients
+     */
     public void pressClient(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(clientPane);
         activate(tabClients);
     }
 
-    //Methode pour charger l'FXML des affaires
+    /**
+     * Methode pour charger l'FXML des affaires
+     */
     public void pressAffaire(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(affairePane);
         activate(tabAffaires);
     }
 
-    //Methode pour charger l'FXML de l'audience
+    /**
+     * Methode pour charger l'FXML de l'audience
+     */
     public void pressAudience(){
         contentPane.getChildren().clear();
         contentPane.getChildren().add(audiencePane);

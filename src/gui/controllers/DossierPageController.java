@@ -42,21 +42,24 @@ public class DossierPageController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         TableDossierUtil tDU = new TableDossierUtil();
-
         //Initialisation du tableau
         tDossier.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         tDossier.getColumns().addAll(tDU.getNumCol(), tDU.getDateCol(), tDU.getTitreCol(), tDU.getDemandeurCol(), tDU.getDefendeurCol());
         remplirTableView();
     }
 
-    //Methode qui remplit la TableView
+    /**
+     * Methode qui remplit la TableView
+     */
     public void remplirTableView() {
         TableDossierUtil tDU = new TableDossierUtil();
         tDossier.setItems(tDU.getListe());
         tDossier.refresh();
     }
 
-    //Methode qui ajoute un dossier
+    /**
+     * Methode qui ajoute un dossier
+     */
     public void ajouterDossier(ActionEvent e) {
         Dossier d = new Dossier(0, dcCreation.getValue(), tfTitre.getText(), tfDemandeur.getText(), tfDefendeur.getText());
         DossierDAO dDao = new DossierDAO();
@@ -65,7 +68,9 @@ public class DossierPageController implements Initializable {
         tDossier.refresh();
     }
 
-    //Methode qui modifie un dossier
+    /**
+     * Methode qui modifie un dossier
+     */
     public void modifierDossier(ActionEvent e){
         Dossier selectedD = (Dossier)tDossier.getSelectionModel().getSelectedItem();
         int i = tDossier.getSelectionModel().getSelectedIndex();
@@ -79,7 +84,9 @@ public class DossierPageController implements Initializable {
         tDossier.refresh();
     }
 
-    //Methode qui supprime un dossier
+    /**
+     * Methode qui supprime un dossier
+     */
     public void supprimerDossier(ActionEvent e){
         Dossier selectedD = (Dossier)tDossier.getSelectionModel().getSelectedItem();
         int i = tDossier.getSelectionModel().getSelectedIndex();
@@ -89,7 +96,9 @@ public class DossierPageController implements Initializable {
         tDossier.refresh();
     }
 
-    //Une méthode qui retourne l'id du dossier selectionnée
+    /**
+     * Une méthode qui retourne l'id du dossier selectionnée
+     */
     public int getSelectedId(){
         Dossier selectedD = (Dossier)tDossier.getSelectionModel().getSelectedItem();
         return selectedD.getId();

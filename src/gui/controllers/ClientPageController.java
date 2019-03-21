@@ -47,7 +47,9 @@ public class ClientPageController implements Initializable {
         });
     }
 
-    //Methode qui definir l'id du dossier à charger
+    /**
+     * Methode qui definir l'id du dossier à charger
+     */
     public void setIdDossier(int idDossier) {
         if(idDossier!=this.idDossier){
             this.idDossier = idDossier;
@@ -57,7 +59,9 @@ public class ClientPageController implements Initializable {
         }
     }
 
-    //Methode qui remplit la TableView
+    /**
+     * Methode qui remplit la TableView
+     */
     public void fillTable() {
         TableClientUtil tCU = new TableClientUtil();
         tClient.getItems().clear();
@@ -65,7 +69,9 @@ public class ClientPageController implements Initializable {
         tClient.refresh();
     }
 
-    //Methode qui vide le formulaire
+    /**
+     * Methode qui vide le formulaire
+     */
     public void resetForm(){
         tfTelephone.clear();
         tfPrenom.clear();
@@ -74,7 +80,9 @@ public class ClientPageController implements Initializable {
         cbDossier.setValue(null);
     }
 
-    //Methode qui ajoute un client
+    /**
+     * Methode qui ajoute un client
+     */
     public void ajouterClient() {
         ClientDAO cDAO = new ClientDAO();
         Client c = new Client(0, tfNom.getText(), tfPrenom.getText(), tfTelephone.getText(), tfAdresse.getText(), idDossier);
@@ -84,7 +92,9 @@ public class ClientPageController implements Initializable {
         tClient.refresh();
     }
 
-    //Methode qui modifie un client
+    /**
+     * Methode qui modifie un client
+     */
     public void modifierClient() {
         ClientDAO cDAO = new ClientDAO();
         Client c = (Client) tClient.getSelectionModel().getSelectedItem();
@@ -105,7 +115,9 @@ public class ClientPageController implements Initializable {
         tClient.refresh();
     }
 
-    //Methode qui supprime un client
+    /**
+     * Methode qui supprime un client
+     */
     public void supprimerClient(){
         ClientDAO cDAO = new ClientDAO();
         Client c = (Client) tClient.getSelectionModel().getSelectedItem();

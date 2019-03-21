@@ -49,7 +49,9 @@ public class AffairePageController implements Initializable {
         });
     }
 
-    //Methode qui permet de set l'id du dossier à charger
+    /**
+     * Methode qui permet de set l'id du dossier à charger
+     */
     public void setIdDossier(int idDossier) {
         if(idDossier!=this.idDossier){
             this.idDossier = idDossier;
@@ -59,7 +61,9 @@ public class AffairePageController implements Initializable {
         }
     }
 
-    //Methode qui remplit la TableView
+    /**
+     * Methode qui remplit la TableView
+     */
     public void fillTable() {
         TableAffaireUtil tCU = new TableAffaireUtil();
         tAffaire.getItems().clear();
@@ -67,7 +71,9 @@ public class AffairePageController implements Initializable {
         tAffaire.refresh();
     }
 
-    //Methode qui vide le formulaire
+    /**
+     * Methode qui vide le formulaire
+     */
     public void resetForm(){
         tfHonoraires.clear();
         tfMotif.clear();
@@ -76,7 +82,9 @@ public class AffairePageController implements Initializable {
         dpCreation.setValue(null);
     }
 
-    //Methode qui ajoute une affaire
+    /**
+     * Methode qui ajoute une affaire
+     */
     public void ajouterAffaire() {
         AffaireDAO aDAO = new AffaireDAO();
         Affaire a = new Affaire(0, idDossier, tfMotif.getText(), Double.valueOf(tfHonoraires.getText()), Double.valueOf(tfHonoraires.getText()), dpCreation.getValue());
@@ -86,7 +94,9 @@ public class AffairePageController implements Initializable {
         tAffaire.refresh();
     }
 
-    //Modification d'une affaire
+    /**
+     * Modification d'une affaire
+     */
     public void modifierAffaire(){
         AffaireDAO aDAO = new AffaireDAO();
         Affaire a = (Affaire)tAffaire.getSelectionModel().getSelectedItem();
@@ -107,7 +117,9 @@ public class AffairePageController implements Initializable {
         tAffaire.refresh();
     }
 
-    //Suppression d'une affaire
+    /**
+     * Suppression d'une affaire
+     */
     public void supprimerAffaire(){
         AffaireDAO aDAO = new AffaireDAO();
         Affaire a = (Affaire)tAffaire.getSelectionModel().getSelectedItem();
