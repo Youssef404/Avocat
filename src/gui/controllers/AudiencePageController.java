@@ -25,4 +25,5 @@ public class AudiencePageController implements Initializable {
                 tAudienceUtil.getVerdictCol(),
                 tAudienceUtil.getVilleCol());
     }
+
 }
