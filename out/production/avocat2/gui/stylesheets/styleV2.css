@@ -10,13 +10,13 @@
 }
 
 /*Style des tabs de navigation*/
-.hover-border:hover,.tab-active{
+.hover-border:hover, .tab-active {
     -fx-border-color: #000000;
     -fx-border-width: 0 0 0 2px;
     -fx-background-color: #DBE4EE;
 }
 
-.tab-active{
+.tab-active {
     -fx-background-color: #a2abb5 !important;
 }
 

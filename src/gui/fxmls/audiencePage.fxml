@@ -75,7 +75,7 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
       </VBox>
-      <TableView fx:id="tClient" stylesheets="@../stylesheets/styleV2.css" HBox.hgrow="ALWAYS">
+       <TableView fx:id="tAudience" stylesheets="@../stylesheets/styleV2.css" HBox.hgrow="ALWAYS">
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy></TableView>

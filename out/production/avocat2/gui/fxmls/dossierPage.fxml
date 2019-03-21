@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.HBox?>
@@ -19,6 +20,9 @@
                   <Insets top="10.0" />
                </VBox.margin>
             </JFXDatePicker>
+             <JFXTextField fx:id="tfTitre" promptText="Titre"/>
+             <JFXTextField fx:id="tfDemandeur" promptText="Demandeur"/>
+             <JFXTextField fx:id="tfDefendeur" promptText="Defendeur"/>
             <VBox alignment="BOTTOM_CENTER" spacing="20.0" VBox.vgrow="ALWAYS">
                <children>
                   <JFXButton onAction="#ajouterDossier" text="Ajouter" textFill="#054a91">
